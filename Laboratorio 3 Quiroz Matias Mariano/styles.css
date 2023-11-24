@@ -1,0 +1,172 @@
+/* Estilos globales */
+body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #394240;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Formulario de datos y formulario de ABM */
+#form-data-container,
+#form-amb-container {
+  display: flex;
+  border: 2px solid #f0a500;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #001f3f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#form-amb-container {
+  display: none;
+}
+
+/* Título del formulario */
+#title-form {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Campos de entrada y etiquetas */
+#input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 340px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #f0a500;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #ffffff;
+}
+
+/* Contenedores de botones */
+#buttons-container,
+#btns-container-edit-delete,
+#btns-container-add {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Botones */
+button {
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 0 10px;
+  text-align: center;
+  min-width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btn-add {
+  background-color: #28a745;
+}
+
+#btn-edit {
+  background-color: #ffc107;
+}
+
+#btn-delete {
+  background-color: #dc3545;
+}
+
+/* Campos de filtro y cálculo de edad promedio */
+#field-type-filter,
+#field-calculate-age-average {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#ddl-type-filter,
+#num-calculate-age-average {
+  max-width: 150px;
+}
+
+#lbl-type-filter,
+#lbl-calculate-age-average,
+#lbl-ckl-colums {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+#btn-calculate-age-average {
+  min-height: min-content;
+  height: 30px;
+  font-size: 12px;
+}
+
+/* Opciones de columnas a mostrar */
+#ckl-colums-to-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+#chk-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.chk-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Contenedor de la tabla */
+#table-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Tabla y celdas */
+table,
+th,
+td {
+  border: 2px solid #f0a500;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+  background-color: #001f3f;
+  color: #ffffff;
+}
